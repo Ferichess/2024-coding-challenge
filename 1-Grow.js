@@ -1,4 +1,6 @@
 // https://www.codewars.com/kata/57f780909f7e8e31830000d4
+// wpu coding challenge
+// 1/336
 
 // function grow (x) {
 //     let result = x[0]
