@@ -29,8 +29,16 @@
 
 // spreed oprator digunakan untuk mengcopy semua elemen pada array menjadi variabel baru dengan data yang sama ex [1,2,3,4] => 1,2,3,4
 
-const min = (list) => Math.min(...list);
-const max = (list) => Math.max(...list);
+// const min = (list) => Math.min(...list);
+// const max = (list) => Math.max(...list);
+
+var min = function(list){
+    return Math.min.apply(null,list);
+}
+
+var max = function(list){
+    return Math.max.apply(null,list);
+}
 
 console.log(min([-52, 56, 30, 29, -54, 0, -110]), -110)
 console.log(min([42, 54, 65, 87, 0]), 0)
