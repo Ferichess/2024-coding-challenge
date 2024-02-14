@@ -21,9 +21,9 @@
 //     return dna.split("T").join("U");
 //   }
 
-function DNAtoRNA(dna) {
-    return dna.replaceAll('T','U');
-  }
+// function DNAtoRNA(dna) {
+//     return dna.replaceAll('T','U');
+//   }
 
 // const DNAtoRNA = (dna) => [...dna].map(el => el === 'T' ? el='U': el).join``
 
@@ -44,5 +44,5 @@ function DNAtoRNA(dna) {
 //     return dna.split('').map(el => el === 'T' ? 'U' : el).join('');
 // }
 
-console.log(DNAtoRNA("TTTT"));
-console.log(DNAtoRNA("GCAT"));
+// console.log(DNAtoRNA("TTTT"));
+// console.log(DNAtoRNA("GCAT"));
