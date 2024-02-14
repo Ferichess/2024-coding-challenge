@@ -39,5 +39,13 @@
 //     return Array.apply(null, Array(n)).map((_, i) => (i+1)*x);
 //   }
 
-// console.log(countBy(1, 10));
+// function countBy(x, n) {
+//     return Array(n).fill(x).map( (el, ind) => el * (ind + 1) );
+//   }
+
+// const countBy = (x, n) => {
+//     return [...Array(n)].map((_, i) => (i + 1) * x)
+// }
+
+// console.log(countBy(1, 4));
 // console.log(countBy(2, 5));
