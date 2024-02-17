@@ -31,14 +31,45 @@
 //     return s >= 90 ? "A" : s >= 80 ? "B" : s >= 70 ? "C" : s >= 60 ? "D" : "F"
 //   }
 
-function getGrade(...s) {
-    const avg = s.reduce((a, b) => a + b) / s.length;
-    if (avg < 60) return "F";
-    if (avg < 70) return "D";
-    if (avg < 80) return "C";
-    if (avg < 90) return "B";
-    return "A";
+// function getGrade(...s) {
+//     const avg = s.reduce((a, b) => a + b) / s.length;
+//     if (avg < 60) return "F";
+//     if (avg < 70) return "D";
+//     if (avg < 80) return "C";
+//     if (avg < 90) return "B";
+//     return "A";
  
-}
+// }
+
+// function getGrade (s1, s2, s3) {
+//     var avg = (s1 + s2 + s3)/3;
+//     switch(true) {
+//       case (avg >= 90):
+//         return 'A';
+//       case ( avg >= 80):
+//         return 'B';
+//       case ( avg >= 70):
+//         return 'C';
+//       case ( avg >= 60):
+//         return 'D'; 
+//       default:
+//         return 'F';   
+//     }
+//    }
+
+// const grades = { A: 90, B: 80, C: 70, D: 60, F: 0 };
+// const sum    = (sum, item)  => sum + item;
+// const mean   = (...numbers) => numbers.reduce(sum, 0) / numbers.length;
+
+// function getGrade () {
+//   const score = mean(...arguments);
+  
+//   for (key in grades) {
+//     if (!grades.hasOwnProperty(key)) continue; // Never do a for-in without this
+//     if (score >= grades[key]) return key; 
+//   }
+// }
+
+var getGrade=(a,b,c)=>'FFFFFFDCBAA'.charAt((a+b+c)/3/10);
 
 console.log(getGrade(95, 90, 93))
