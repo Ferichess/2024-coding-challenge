@@ -58,11 +58,13 @@
 
 //     }
 
-function grow(x){
-  const result = x.reduce((a, b) => a * b, 1);
-  return result;
-}
+// function grow(x){
+//   const result = x.reduce((a, b) => a * b, 1);
+//   return result;
+// }
 
 // const grow = () => [1,2,3,4].reduce((a, b) => a * b, 1);
 
-console.log(grow(array));
+// console.log(grow(array));
+
+console.log([1,2,3] + [4,5,6]);
