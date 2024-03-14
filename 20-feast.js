@@ -40,11 +40,24 @@
 
 // const feast = (b, d) => d.startsWith(b[0]) && d.endsWith(b[b.length-1])
 
-function feast(beast, dish) {
-    return beast[0] === dish[0] &&
-      beast.substr(-1) === dish.substr(-1);
-  }
+// function feast(beast, dish) {
+//     return beast[0] === dish[0] &&
+//       beast.substr(-1) === dish.substr(-1);
+//   }
+
+// function feast(beast, dish) {
+//     var v1 = beast.split("").shift();
+//     var v2 = beast.split("").pop();
+//     var v3 = dish.split("").shift();
+//     var v4 = dish.split("").pop();
+//     return (v1 === v3 && v2 === v4);
+//   }
+
+const feast=(a,b,f=s=>s[0]+s[s.length-1])=>f(a)==f(b)
 
 console.log(feast("great blue heron", "garlic naan"))
 console.log(feast("chickadee", "chocolate cake"))
 console.log(feast("brown bear", "bear claw"))
+
+
+console.log(!!"false" == !!"true")
